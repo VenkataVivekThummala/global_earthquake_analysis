@@ -218,7 +218,7 @@ with st.expander("📊 Compare with Original Notebook Benchmark Insights"):
 # ----------------------------------------------------
 # Tabbed Navigation for Analytics sections
 # ----------------------------------------------------
-tab_temporal, tab_geo, tab_risk, tab_correlation, tab_explorer = st.tabs([
+tab_temporal, tab_geo = st.tabs([
     "📈 Magnitude & Temporal Trends",
     "🌍 Geographical & Hotspot Analysis"
 ])
@@ -409,5 +409,3 @@ with tab_geo:
         hotspots.style.background_gradient(cmap='Oranges', subset=['Earthquake Count']),
         use_container_width=True
     )
-
-# 
