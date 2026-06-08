@@ -220,10 +220,7 @@ with st.expander("📊 Compare with Original Notebook Benchmark Insights"):
 # ----------------------------------------------------
 tab_temporal, tab_geo, tab_risk, tab_correlation, tab_explorer = st.tabs([
     "📈 Magnitude & Temporal Trends",
-    "🌍 Geographical & Hotspot Analysis",
-    "⚠️ Risk & Depth Analysis",
-    "🔗 Correlation Analysis",
-    "🔍 Interactive Data Explorer"
+    "🌍 Geographical & Hotspot Analysis"
 ])
 
 # ----------------------------------------------------
