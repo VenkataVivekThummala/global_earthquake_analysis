@@ -405,7 +405,11 @@ with tab_geo:
     hotspots = df_filtered.groupby(['latitude', 'longitude']).size().reset_index(name='Earthquake Count')
     hotspots = hotspots.sort_values(by='Earthquake Count', ascending=False).head(10).reset_index(drop=True)
     
-    st.dataframe(
-        hotspots.style.background_gradient(cmap='Oranges', subset=['Earthquake Count']),
-        use_container_width=True
-    )
+    try:
+        st.dataframe(
+            hotspots.style.background_gradient(cmap='Oranges', subset=['Earthquake Count']),
+            use_container_width=True
+        )
+    except ImportError:
+        st.dataframe(hotspots, use_container_width=True)
+
