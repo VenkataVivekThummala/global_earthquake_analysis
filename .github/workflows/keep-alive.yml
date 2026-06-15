@@ -36,6 +36,8 @@ jobs:
  waitUntil: "networkidle",
  timeout: 60000
  });
+
+ 
  await page.waitForTimeout(10000);
 
  const title = await page.title();
@@ -44,4 +46,4 @@ jobs:
  console.log("Streamlit app opened successfully.");
  })();
  EOF
-How it runs: The sc
+
